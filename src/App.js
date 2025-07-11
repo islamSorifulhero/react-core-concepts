@@ -1,27 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+// function App() {
+//   return (
+//     <div className='App'>
+//       <header className='App-header'>
+//         <h1>I am a React Person</h1>
+//         <p>I love React developer</p>
+//         <Person name="soriful" age="22" job="software developer"></Person>
+//       </header>
+//     </div>
+//   );
+// }
+// function Person(pulls){
+//   return(
+//   <div style={{backgroundColor: 'red', color: 'black', padding: '40px'}}>
+//     <h1>user name: {pulls.name}</h1>
+//     <h2>year: {pulls.age}</h2>
+//     <h3>JobPlace: {pulls.job}</h3>
+//   </div>
+//   )
+// }
+// export default App;
 
-function App() {
+// ParentComponent.jsx (React Example)
 
-  return (
-    <div className='App'>
-      <header className='App-header'>
-        <p>I am a React Person</p>
-        <Person name="Rubel" nayika="Mousumi"></Person>
-        <Person name="jashim" nayika="shabana"></Person>
-      </header>
-    </div>
+
+function ChildComponent() {
+  return(
+  <div>
+    <header className='header-component'>
+      <h1>Hi I am single</h1>
+      <h3>ready to mingle</h3>
+      <p>I am a zarnalis</p>
+      <Korim name= 'salam' age= '33' />
+    </header>
+  </div>
   );
 }
-function Person(props){
+function Korim(props){
   return(
-  <div style= {{border:'1px solid gold', margin:'10px', padding:'20px'}}>
-    <h1>Nayok: {props.name}</h1>
-    <h3>Heroin of: {props.nayika}</h3>
+  <div>
+    <h1>user name: {props.name}</h1>
+    <h1>user age: {props.name}</h1>
   </div>
   )
 }
-export default App;
-
-
-
+export default ChildComponent;
